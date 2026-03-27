@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  aside,
+  button {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  article,
+  section,
+  div {
+    box-shadow: none !important;
+  }
+}
